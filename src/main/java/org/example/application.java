@@ -1,3 +1,5 @@
+package org.example;
+
 interface SignalHandler {
     void handleSignal(int signal);
 }
