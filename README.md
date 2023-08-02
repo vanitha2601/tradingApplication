@@ -3,6 +3,25 @@
 The Trading Application is a service designed to execute trading algorithms (Algos) based on received signals. 
 The application is structured to handle a variety of signals, each representing specific trading instructions.
 
+# Solution Considered 
+
+**TASK :**
+
+While the current ‘TradingApplication’ code only has three signals, 
+once in production it is expected that up to 50 new signals will be added per month (600 after year one, 1200 after year two etc).
+
+**Solution**
+
+When we get the new signals we cannot add more signals in the switch case and it is hard to understand and will get performance issue.
+
+**To avoid this issue :**
+
+We can use Map or database and also we can use JSON File.
+i have added JSON file to keep the new signals and corresponding their actions to get.
+And based on their signal we can send a http request and get the response.
+We no need to modify the class files and even when we get new signals we can add it to the JSON files.
+
+
 # Features
 Process trading signals and apply appropriate trading algorithms.
 
@@ -68,6 +87,10 @@ Once the application is running, you can send signals to it via the exposed HTTP
 Send a POST request to http://localhost:4567/signal?signal=<SIGNAL_NUMBER> to process a signal.
 
 You can use tools like Postman to send requests to the application.
+
+**Output Results :**
+
+![Response-Postman1](https://github.com/vanitha2601/tradingApplication/assets/103498608/f1dc1ff3-ab11-4f60-a77e-ebbd93aa51e6)
 
 # Extending the Application
 
