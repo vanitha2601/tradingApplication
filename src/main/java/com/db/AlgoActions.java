@@ -14,10 +14,6 @@ public class AlgoActions {
         actionsMap.put("cancelTrades", Algo::cancelTrades);
         actionsMap.put("reverse", Algo::reverse);
         actionsMap.put("submitToMarket", Algo::submitToMarket);
-        actionsMap.put("implementTrades", Algo::implementTrades);
-        actionsMap.put("forwardTrades", Algo::forwardTrades);
-        actionsMap.put("reverseTrades", Algo::reverseTrades);
-        actionsMap.put("ignoreTrades", Algo::ignoreTrades);
         actionsMap.put("performCalc", Algo::performCalc);
         actionsMap.put("setAlgoParam", algo -> algo.setAlgoParam(1, 200));
         // Add other mappings as needed

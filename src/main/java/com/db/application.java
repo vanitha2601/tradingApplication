@@ -26,10 +26,6 @@ class Algo {
     public void submitToMarket() { System.out.println("submitToMarket"); }
     public void performCalc() { System.out.println("performCalc"); }
     public void setUp() { System.out.println("setUp"); }
-    public void implementTrades() { System.out.println("**************implementTrades"); }
-    public void forwardTrades() { System.out.println("--------forwardTrades"); }
-    public void reverseTrades() { System.out.println("***********reverseTrades"); }
-    public void ignoreTrades() { System.out.println("----------ignoreTrades"); }
     public void setAlgoParam(int param, int value) { System.out.println("setAlgoParam " + param + "," + value); }
 }
 
