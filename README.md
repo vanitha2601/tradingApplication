@@ -36,5 +36,14 @@ Build the project by selecting "Build" > "Build Project" from the menu.
 **Using Maven**
 
 Navigate to the project directory where the pom.xml file is located.
-Run the following command:
+Run the following command: mvn clean install
+
+**Interacting with the Application**
+
+Once the application is running, you can send signals to it via the exposed HTTP endpoint. The application listens on port 4567 by default.
+
+Send a POST request to http://localhost:4567/signal?signal=<SIGNAL_NUMBER> to process a signal.
+
+You can use tools like Postman or curl to send requests to the application. 
+Alternatively, you can create a simple HTML form to submit signals via a web browser.
 
