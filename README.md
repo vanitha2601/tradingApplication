@@ -25,3 +25,16 @@ Maven or Gradle (for dependency management)
 
 **Dependencies**
 Spark Framework for HTTP handling
+
+# Building the Project
+
+**Using IntelliJ IDEA**
+
+Open the project in IntelliJ IDEA.
+Build the project by selecting "Build" > "Build Project" from the menu.
+
+**Using Maven**
+
+Navigate to the project directory where the pom.xml file is located.
+Run the following command:
+
