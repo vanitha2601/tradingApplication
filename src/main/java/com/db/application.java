@@ -5,6 +5,8 @@ import java.util.List;
 import java.util.Scanner;
 import java.util.function.Consumer;
 
+import static spark.Spark.*;
+
 /**
  * Author: Vanithasri
  * Description: The classes in this file handle
@@ -87,6 +89,27 @@ class Application implements SignalHandler {
             } else {
                 System.out.println("Invalid signal value!");
             }
+
+            // Set up HTTP endpoint to handle signals via POST requests
+            post("/signal", (request, response) -> {
+                try {
+                    int signal = Integer.parseInt(request.queryParams("signal"));
+                    SignalAction signalAction = signals.get(signal - 1);
+                    StringBuilder result = new StringBuilder("Signal processed successfully. Signal: " + signal + "\nActions:\n");
+                    List<String> actions = signalAction.getActions();
+                    for (String action : actions) {
+                        result.append(action).append("\n");
+                    }
+                    app.handleSignal(signal);
+                    return result.toString();
+                } catch (Exception e) {
+                    response.status(400);
+                    return "Error processing signal: " + e.getMessage();
+                }
+            });
+
+
+
         } catch (IOException e) {
             e.printStackTrace();
         }
