@@ -89,8 +89,8 @@ class Application implements SignalHandler {
             } else {
                 System.out.println("Invalid signal value!");
             }
-
-            // Set up HTTP endpoint to handle signals via POST requests
+            // Set up HTTP endpoint to handle signals
+            // via POST requests
             post("/signal", (request, response) -> {
                 try {
                     int signal = Integer.parseInt(request.queryParams("signal"));

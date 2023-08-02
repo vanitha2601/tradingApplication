@@ -4,16 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ca4f64ee-b56e-4d35-ac1b-f74eb3d4cab5" name="Changes" comment="Initial commit to test the task file in my local machine. and to make sure my understanding of the project is right.">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/db/AlgoActions.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/db/SignalAction.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/db/SignalLoader.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/db/application.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/signals.json" afterDir="false" />
+    <list default="true" id="ca4f64ee-b56e-4d35-ac1b-f74eb3d4cab5" name="Changes" comment="http endpoint to handlesignal (POST request) code committed">
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Main.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/application.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/db/application.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/db/application.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -52,9 +46,9 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "last_opened_file_path": "C:/Users/vanirajesh/db/tradingApplication",
+    "last_opened_file_path": "C:/Users/vanirajesh/db/tradingApplication/pom.xml",
     "onboarding.tips.debug.path": "C:/Users/vanirajesh/db/tradingApplication/src/main/java/org/example/Main.java",
-    "settings.editor.selected.configurable": "vcs.Git"
+    "settings.editor.selected.configurable": "terminal"
   }
 }]]></component>
   <component name="RunManager" selected="Application.Application (1)">
@@ -72,11 +66,11 @@
       </method>
     </configuration>
     <configuration name="Application (3)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="org.example.Application" />
+      <option name="MAIN_CLASS_NAME" value="com.db.Application" />
       <module name="tradingApplication" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="org.example.*" />
+          <option name="PATTERN" value="com.db.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -85,11 +79,11 @@
       </method>
     </configuration>
     <configuration name="Application (4)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="org.example.Application" />
+      <option name="MAIN_CLASS_NAME" value="com.db.Application" />
       <module name="tradingApplication" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="org.example.*" />
+          <option name="PATTERN" value="com.db.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -98,11 +92,11 @@
       </method>
     </configuration>
     <configuration name="Application (5)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="org.example.Application" />
+      <option name="MAIN_CLASS_NAME" value="com.db.Application" />
       <module name="tradingApplication" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="org.example.*" />
+          <option name="PATTERN" value="com.db.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -126,10 +120,10 @@
     <recent_temporary>
       <list>
         <item itemvalue="Application.Application (1)" />
-        <item itemvalue="Application.Application" />
         <item itemvalue="Application.Application (5)" />
         <item itemvalue="Application.Application (4)" />
         <item itemvalue="Application.Application (3)" />
+        <item itemvalue="Application.Application" />
       </list>
     </recent_temporary>
   </component>
@@ -166,7 +160,23 @@
       <option name="project" value="LOCAL" />
       <updated>1690910534847</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Added new signals in the JSON files instead of storing in the switch case code committed">
+      <option name="closed" value="true" />
+      <created>1690926722209</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1690926722209</updated>
+    </task>
+    <task id="LOCAL-00005" summary="http endpoint to handlesignal (POST request) code committed">
+      <option name="closed" value="true" />
+      <created>1690955421070</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1690955421070</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -182,6 +192,17 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Initial commit to test the task file in my local machine. and to make sure my understanding of the project is right." />
-    <option name="LAST_COMMIT_MESSAGE" value="Initial commit to test the task file in my local machine. and to make sure my understanding of the project is right." />
+    <MESSAGE value="Added new signals in the JSON files instead of storing in the switch case code committed" />
+    <MESSAGE value="http endpoint to handlesignal (POST request) code committed" />
+    <option name="LAST_COMMIT_MESSAGE" value="http endpoint to handlesignal (POST request) code committed" />
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/tradingApplication$Application__2_.ic" NAME="Application (2) Coverage Results" MODIFIED="1690930978538" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>com.db.*</FILTER>
+    </SUITE>
   </component>
 </project>
