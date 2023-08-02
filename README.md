@@ -13,3 +13,15 @@ The SignalHandler and Algo classes are provided by the Trading Algo library and 
 scaling to hundreds over time.
 
 **Integration:** The application should be a running service with a single HTTP endpoint for receiving the 'signal'.
+
+# Signal Handling
+
+The application can receive signals through an HTTP endpoint and pass them to the appropriate Algo action.
+
+# Setup
+**Prerequisites**
+Java 8 or higher
+Maven or Gradle (for dependency management)
+
+**Dependencies**
+Spark Framework for HTTP handling
