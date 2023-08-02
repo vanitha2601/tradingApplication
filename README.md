@@ -31,12 +31,16 @@ Spark Framework for HTTP handling
 **Using IntelliJ IDEA**
 
 Open the project in IntelliJ IDEA.
+
 Build the project by selecting "Build" > "Build Project" from the menu.
 
-**Using Maven**
+Running the Application
 
-Navigate to the project directory where the pom.xml file is located.
-Run the following command: mvn clean install
+Using IntelliJ IDEA
+
+Right-click the Application class in the Project Explorer.
+
+Select "Run 'Application.main()'" from the context menu.
 
 **Interacting with the Application**
 
@@ -44,6 +48,5 @@ Once the application is running, you can send signals to it via the exposed HTTP
 
 Send a POST request to http://localhost:4567/signal?signal=<SIGNAL_NUMBER> to process a signal.
 
-You can use tools like Postman or curl to send requests to the application. 
-Alternatively, you can create a simple HTML form to submit signals via a web browser.
+You can use tools like Postman to send requests to the application.
 
